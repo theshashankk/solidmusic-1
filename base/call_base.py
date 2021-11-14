@@ -74,8 +74,7 @@ class CallBase:
         for active_call in call.active_calls:
             if chat_id == getattr(active_call, "chat_id"):
                 return True
-            else:
-                return False
+            return False
         return False
 
     def send_playlist(self, chat_id: int):
